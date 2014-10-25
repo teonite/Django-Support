@@ -8,7 +8,7 @@ Installation steps
 
 # Add required applications to your django apps
 
- In single schema application::
+ In single schema application:
 
 ```
         INSTALLED_APPS = (
@@ -16,7 +16,7 @@ Installation steps
         )
 ```
 
- In django tenant schemas application::
+ In django tenant schemas application:
 
 ```
         SHARED_APPS = (
@@ -103,14 +103,16 @@ Use api view located default at: ``api/issues/``
 
 Extra field
 ===========
-This field is used to provide extra info, which should be appended to description field. It accepts dictionaries eg.::
+This field is used to provide extra info, which should be appended to description field. It accepts dictionaries eg.:
 
+```
     {
         "ip": "127.0.0.1",
         "browser": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.16 Safari/537.36",
     }
+```
 
-Available values for Console:
+Available values for Console
 =============================
 
 ```
@@ -164,7 +166,6 @@ Available values for Console:
 
 Default description template
 ============================
-::
 
     {{ description }}
 
