@@ -6,9 +6,9 @@ Backend for TEONITE Angular Support - an application to submit bug/features from
 Installation steps
 ==================
 
-#. Add required applications to your django apps
+# Add required applications to your django apps
 
-    - in single schema application::
+ In single schema application::
 
 ```
         INSTALLED_APPS = (
@@ -16,7 +16,7 @@ Installation steps
         )
 ```
 
-    - in django tenant schemas application::
+ In django tenant schemas application::
 
 ```
         SHARED_APPS = (
@@ -24,10 +24,9 @@ Installation steps
         )
 ```
 
-#. Add necessary settings to your config file::
+# Add necessary settings to your config file:
 
-```
-	- YouTrack:
+YouTrack:
 
 ```
     YOUTRACK_ADDRESS = ''         # URL to your YouTrack instance
@@ -42,7 +41,7 @@ Installation steps
     }
 ```
 
-	- Redmine:
+Redmine:
 
 ```
     REDMINE_ADDRESS = ''          # URL to your Redmine instance
@@ -59,7 +58,7 @@ Installation steps
     ISSUE_TEMPLATE = 'default.html'
 ```
 
-#. Add to yours urls.py::
+# Add to yours urls.py:
 
 ```
     urlpatterns += patterns('',
@@ -68,7 +67,7 @@ Installation steps
     )
 ```
 
-#. Configure logging::
+# Configure logging:
 
 ```
     LOGGING = {
@@ -86,7 +85,7 @@ Usage
 =====
 Use api view located default at: ``api/issues/``
 
-- types supported by default::
+- types supported by default:
 
     "application/json",
     "application/x-www-form-urlencoded",
