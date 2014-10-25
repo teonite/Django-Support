@@ -5,10 +5,10 @@
 #
 from setuptools import setup
 
-__version__ = "1.0.9"
+__version__ = "1.0.10"
 
 readme = []
-with open('README.rst', 'r') as fh:
+with open('README.md', 'r') as fh:
     readme = fh.readlines()
 
 setup(
@@ -20,17 +20,17 @@ setup(
     url='http://teonite.com/',
     description='django-support is an app that provide api method to add new issue to Redmine/YouTrack issue tracker',
     long_description='\n'.join(readme),
-    license='Proprietary',
+    license='GPL 2.0',
     include_package_data=True,
     install_requires=[
-        "Django >= 1.5.0",
+        "Django >= 1.5.0, < 1.7",
         "djangorestframework >= 2.3.0",
-        "YouTrack-Python >= 1.0.6",
+        "pyyoutrack >= 1.0.6",
         "django-ipware >= 0.0.8"
     ],
     classifiers=[
         "Development Status :: 4 - Beta",
-        "License :: Other/Proprietary License",
+        "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
         "Environment :: Web Environment",
         "Framework :: Django",
         "Programming Language :: Python :: 2.7"
