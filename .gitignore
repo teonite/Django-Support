@@ -1,5 +1,4 @@
 test/*
-__init__.py
 django_support.egg-info/*
 dist/*
 .idea/*
