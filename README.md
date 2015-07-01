@@ -99,18 +99,6 @@ Use api view located default at: ``api/issues/``
     * ``tracker_id`` - trackers are e.g. ``Bug``, ``Feature``, default for console: ``Bug, id=1``
     * ``priority_id`` - default for console: ``Normal, id=4``
     * ``category_id``
-    * ``extra``
-
-Extra field
-===========
-This field is used to provide extra info, which should be appended to description field. It accepts dictionaries eg.:
-
-```
-    {
-        "ip": "127.0.0.1",
-        "browser": "Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.16 Safari/537.36",
-    }
-```
 
 Available values for Console
 =============================
@@ -168,7 +156,3 @@ Default description template
 ============================
 
     {{ description }}
-
-    Additional information: {% for key, value in extra.items %}
-        - {{ key }} : {{ value }}{% endfor %}
-
