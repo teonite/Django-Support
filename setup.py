@@ -5,7 +5,7 @@
 #
 from setuptools import setup
 
-__version__ = "1.0.10"
+__version__ = "1.1.1"
 
 readme = []
 with open('README.md', 'r') as fh:
@@ -23,7 +23,7 @@ setup(
     license='GPL 2.0',
     include_package_data=True,
     install_requires=[
-        "Django >= 1.5.0, < 1.7",
+        "Django >= 1.8",
         "djangorestframework >= 2.3.0",
         "pyyoutrack >= 1.0.6",
         "django-ipware >= 0.0.8"
